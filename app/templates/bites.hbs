@@ -1,2 +1,7 @@
 <section id="main">
+  <ul id="bites">
+    {{#each bite in model}}
+    {{bite-content bite=bite}}
+    {{/each}}
+  </ul>
 </section>
