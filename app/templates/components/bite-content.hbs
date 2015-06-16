@@ -1,5 +1,5 @@
-<li class="bite">
+<li class="bite {{if bite.isComplete 'completed'}}">
   <h3>{{bite.title}}</h3>
   <iframe src="http://www.youtube.com/embed/{{bite.videoId}}"></iframe>
-  <button>Complete</button>
+  <button {{action 'complete' bite}}>Complete</button>
 </li>
